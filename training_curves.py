@@ -44,7 +44,7 @@ for line in list_lines:
           print(e)
 
 plt.plot(list_losses)  
-plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/')
+plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/trainingloss.png')
 
 """list_loss = []
 
@@ -63,5 +63,5 @@ for stats_epoch in list_lines[:1]:
 
   
 plt.plot(list_loss)  
-plt.save('/mnt/smb/locker/issa-locker/users/Eugénie/')
+plt.save('/mnt/smb/locker/issa-locker/users/Eugénie/trainingloss.png')
 #print('content 1 line:', list_lines[0])"""
