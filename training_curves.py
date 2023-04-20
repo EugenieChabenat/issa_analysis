@@ -34,10 +34,10 @@ list_losses = []
 for line in list_lines:
   ind = line.find("loss")
   loss = line[ind+7: ind+17]
-  print(loss)
+  #print(loss)
   if loss: 
     if loss != "or-weig" and loss != "lor-wei" and loss != "olor-we" and loss !="" and loss.find('}')==-1 and loss != "100 90." and loss !='': 
-      if loss != '': 
+      if loss < 300: 
         try: 
           list_losses.append(float(loss))
         except Exception as e: 
