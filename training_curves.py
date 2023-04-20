@@ -44,7 +44,8 @@ for line in list_lines:
           print(e)
 
 plt.plot(list_losses)  
-plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/trainingloss.png')
+plt.show()
+plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/trainingloss.png')
 
 """list_loss = []
 
