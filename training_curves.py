@@ -11,4 +11,12 @@ faces_texture = 'factorize_avgpool_equivariant_all_bn_v5'
 
 path = '/home/ec3731/checkpoints/barlowtwins/equivariant_all_bn_v1_v2/stats.txt'
 
+list_lines = []
+with open(path, 'r') as f: 
+  lines = f.readlines()
+  list_lines.append(lines)
+  
+  
+print('len: ', len(list_lines))
 
+print('content 1 line:', linst_lines[0])
