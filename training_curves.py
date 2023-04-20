@@ -14,7 +14,7 @@ path = '/home/ec3731/checkpoints/barlowtwins/equivariant_all_bn_v1_v2/stats.txt'
 
 list_lines = []
 
-with open(path, 'r') as f: 
+with open(path) as f: 
   data = json.load(f)
 
 print('data type:', data.type)
