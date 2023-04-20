@@ -33,7 +33,7 @@ print('len: ', len(list_lines))
 list_losses = []
 for line in list_lines:
   ind = line.find("loss")
-  loss = line[ind+2: ind+10]
+  loss = line[ind+7: ind+10]
   print(loss)
   if loss: 
     if loss != "or-weig" and loss != "lor-wei" and loss != "olor-we" and loss !="" and loss.find('}')==-1 and loss != "100 90." and loss !='': 
