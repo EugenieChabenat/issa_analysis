@@ -33,7 +33,7 @@ print('len: ', len(list_lines))
 list_losses = []
 for line in list_lines:
   ind = line.find("loss")
-  loss = line[ind+7: ind+15]
+  loss = line[ind+7: ind+14]
   print(loss)
   if loss != "or-weigh": 
     list_losses.append(float(loss))
