@@ -13,7 +13,12 @@ faces_texture = 'factorize_avgpool_equivariant_all_bn_v5'
 path = '/home/ec3731/checkpoints/barlowtwins/equivariant_all_bn_v1_v2/stats.txt'
 
 list_lines = []
+
 with open(path, 'r') as f: 
+  data = json.load(f)
+
+print('data type:', data.type)
+"""with open(path, 'r') as f: 
   lines = f.readlines()
   list_lines.append(lines)
   
@@ -21,6 +26,8 @@ with open(path, 'r') as f:
 print('len: ', len(list_lines))
 
 list_loss = []
+
+
 for stats_epoch in list_lines[:1]: 
   # each step for the epoch 
   print(stats_epoch)
@@ -31,7 +38,7 @@ for stats_epoch in list_lines[:1]:
     #list_loss.append(stats_step["loss"])
   
   
-  #list_loss.append(stats_epoch["loss"])
+  #list_loss.append(stats_epoch["loss"])"""
 
   
 plt.plot(list_loss)  
