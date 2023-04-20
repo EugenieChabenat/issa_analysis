@@ -32,7 +32,9 @@ for line in lines:
 print('len: ', len(list_lines))
 list_losses = []
 for line in list_lines:
-  loss = json.loads(line)["loss"]
+  ind = line.find("loss")
+  loss = line[ind+5: ind+15]
+  print(loss)
   list_losses.append(loss)
   
 
