@@ -38,7 +38,10 @@ for line in list_lines:
   if loss: 
     if loss != "or-weig" and loss != "lor-wei" and loss != "olor-we" and loss !="" and loss.find('}')==-1 and loss != "100 90." and loss !='': 
       if loss != '': 
-        list_losses.append(float(loss))
+        try: 
+          list_losses.append(float(loss))
+        except Exception as e: 
+          print(e)
 
 plt.plot(list_loss)  
 plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/')
