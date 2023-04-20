@@ -23,7 +23,9 @@ print('len: ', len(list_lines))
 list_loss = []
 for stats_epoch in list_lines[:1]: 
   # each step for the epoch 
+  print(stats_epoch)
   for stats_step in stats_epoch[:5]: 
+    print('step: ', stats_step)
     if stats_step[2:6] == str("epoch"): 
       print(stats_step)
     #list_loss.append(stats_step["loss"])
