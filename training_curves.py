@@ -34,7 +34,7 @@ list_losses = []
 for line in list_lines:
   ind = line.find("loss")
   loss = line[ind+7: ind+14]
-  print(loss)
+  #print(loss)
   if loss: 
     if loss != "or-weig" and loss != "lor-wei" and loss != "olor-we" and loss !="" and loss.find('}')==-1 and loss != "100 90." and loss !='': 
       if loss != '': 
@@ -43,7 +43,7 @@ for line in list_lines:
         except Exception as e: 
           print(e)
 
-plt.plot(list_loss)  
+plt.plot(list_losses)  
 plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/')
 
 """list_loss = []
