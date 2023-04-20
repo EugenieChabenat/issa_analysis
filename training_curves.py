@@ -19,4 +19,4 @@ with open(path, 'r') as f:
   
 print('len: ', len(list_lines))
 
-print('content 1 line:', linst_lines[0])
+print('content 1 line:', list_lines[0])
