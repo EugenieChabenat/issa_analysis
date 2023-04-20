@@ -35,7 +35,7 @@ for line in list_lines:
   ind = line.find("loss")
   loss = line[ind+7: ind+14]
   print(loss)
-  if loss != "or-weigh": 
+  if loss != "or-weig": 
     list_losses.append(float(loss))
 
 plt.plot(list_loss)  
