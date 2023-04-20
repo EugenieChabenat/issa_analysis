@@ -32,7 +32,6 @@ for line in lines:
 print('len: ', len(list_lines))
 list_losses = []
 for line in list_lines:
-  print(line.type)
   loss = json.loads(line)["loss"]
   list_losses.append(loss)
   
