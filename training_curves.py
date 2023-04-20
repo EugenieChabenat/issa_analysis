@@ -1,7 +1,7 @@
 import json
 import pickle
 import numpy as np 
-import matplotlib.pyplot as plt 
+import matplotlib as plt#.pyplot as plt 
 
 # different paths of checkpoints folders for analysis 
 v1 = 'equivariant_all_bn_v1_v2'
@@ -22,6 +22,9 @@ print('len: ', len(list_lines))
 
 list_loss = []
 for stats_epoch in list_lines[:1]: 
+  # each step for the epoch 
+  for stats_step in stats_epoch: 
+    list_loss.append(stats_step["loss"]
   print(stats_epoch)
   
   #list_loss.append(stats_epoch["loss"])
