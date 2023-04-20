@@ -35,7 +35,8 @@ for line in list_lines:
   ind = line.find("loss")
   loss = line[ind+7: ind+15]
   print(loss)
-  list_losses.append(float(loss))
+  if loss != "or-weigh": 
+    list_losses.append(float(loss))
 
 plt.plot(list_loss)  
 plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/')
