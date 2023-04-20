@@ -24,6 +24,13 @@ with open(path, 'r') as f:
   
 print('len: ', len(lines))
 
+list_lines = []
+for line in lines: 
+  if line[:4] != "main": 
+    list_lines.append(line)
+
+print('len: ', len(list_lines))
+
 """list_loss = []
 
 
