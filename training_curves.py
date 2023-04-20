@@ -19,16 +19,12 @@ list_lines = []
   
 
 #print('data type:', data.type)
-with open(path, 'r') as f: 
-  while True: 
-    line = f.readline()
-    if line[:3] != "main" :
-      list_lines.append(line)
+with open(path, 'r') as f:
+  lines = f.readlines()
   
-  
-print('len: ', len(list_lines))
+print('len: ', len(lines))
 
-list_loss = []
+"""list_loss = []
 
 
 for stats_epoch in list_lines[:1]: 
@@ -46,4 +42,4 @@ for stats_epoch in list_lines[:1]:
   
 plt.plot(list_loss)  
 plt.save('/mnt/smb/locker/issa-locker/users/Eugénie/')
-#print('content 1 line:', list_lines[0])
+#print('content 1 line:', list_lines[0])"""
