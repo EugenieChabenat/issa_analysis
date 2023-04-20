@@ -14,13 +14,16 @@ path = '/home/ec3731/checkpoints/barlowtwins/equivariant_all_bn_v1_v2/stats.txt'
 
 list_lines = []
 
-with open(path) as f: 
-  data = f.read()
+#with open(path) as f: 
+#  data = f.read()
+  
 
-print('data type:', data.type)
-"""with open(path, 'r') as f: 
-  lines = f.readlines()
-  list_lines.append(lines)
+#print('data type:', data.type)
+with open(path, 'r') as f: 
+  while True: 
+    line = f.readline()
+    if line[:3] != "main" :
+      list_lines.append(line)
   
   
 print('len: ', len(list_lines))
@@ -38,7 +41,7 @@ for stats_epoch in list_lines[:1]:
     #list_loss.append(stats_step["loss"])
   
   
-  #list_loss.append(stats_epoch["loss"])"""
+  #list_loss.append(stats_epoch["loss"])
 
   
 plt.plot(list_loss)  
