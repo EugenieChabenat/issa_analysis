@@ -36,7 +36,7 @@ for line in list_lines:
   loss = line[ind+7: ind+14]
   print(loss)
   if loss != "or-weig" and loss != "lor-wei" and loss != "olor-we" and loss !="" and loss.find('}')==-1 and loss != "100 90." and loss !='': 
-    if loss != '': 
+    if loss != '' and not loss.empty(): 
       list_losses.append(float(loss))
 
 plt.plot(list_loss)  
