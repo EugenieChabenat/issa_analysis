@@ -21,8 +21,10 @@ with open(path, 'r') as f:
 print('len: ', len(list_lines))
 
 list_loss = []
-for stats_epoch in list_lines: 
-  list_loss.append(stats_epoch["loss"])
+for stats_epoch in list_lines[:1]: 
+  print(stats_epoch)
+  
+  #list_loss.append(stats_epoch["loss"])
 
   
 plt.plot(list_loss)  
