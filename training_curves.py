@@ -26,4 +26,5 @@ for stats_epoch in list_lines:
 
   
 plt.plot(list_loss)  
+plt.save('/mnt/smb/locker/issa-locker/users/Eugénie/')
 #print('content 1 line:', list_lines[0])
