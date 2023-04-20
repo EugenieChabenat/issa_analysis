@@ -1,7 +1,7 @@
 import json
 import pickle
 import numpy as np 
-import matplotlib as plt#.pyplot as plt 
+import matplotlib.pyplot as plt 
 
 # different paths of checkpoints folders for analysis 
 v1 = 'equivariant_all_bn_v1_v2'
@@ -33,10 +33,12 @@ print('len: ', len(list_lines))
 list_losses = []
 for line in list_lines:
   ind = line.find("loss")
-  loss = line[ind+5: ind+15]
-  print(loss)
-  list_losses.append(loss)
-  
+  loss = line[ind+7: ind+15]
+  #print(loss)
+  list_losses.append(int(loss))
+
+plt.plot(list_loss)  
+plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/')
 
 """list_loss = []
 
