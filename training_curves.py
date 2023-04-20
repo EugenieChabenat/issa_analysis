@@ -42,6 +42,9 @@ for line in list_lines:
           list_losses.append(float(loss))
         except Exception as e: 
           print(e)
+          
+          
+print('final len: ', len(list_losses))
 
 plt.plot(list_losses)  
 plt.show()
