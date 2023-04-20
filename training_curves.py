@@ -49,7 +49,7 @@ print('final len: ', len(list_losses))
 
 plt.plot(list_losses)  
 plt.show()
-plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/traininglossv1.png')
+plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/traininglossv3.png')
 
 """list_loss = []
 
