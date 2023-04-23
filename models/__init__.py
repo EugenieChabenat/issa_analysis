@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 import torchvision.models as models
+from torchvision.models import resnet50 
 
 def off_diagonal(x):
     # return a flattened view of the off-diagonal elements of a square matrix
