@@ -113,55 +113,55 @@ data_root = '/mnt/smb/locker/issa-locker/users/Josh/data/vbspl_texture_1ki/val/'
 
 normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
                                              std=[0.229, 0.224, 0.225])
-    if crop_center:
-        _trans = ttransforms.Compose([
-                ttransforms.Resize(224),
-                ttransforms.CenterCrop(112),
-                ttransforms.Resize(224),
-                ttransforms.ToTensor(),
-                normalize,
-            ])
-    else:
-        _trans = ttransforms.Compose([
-                ttransforms.Resize(224),
-                ttransforms.CenterCrop(224),
-                ttransforms.ToTensor(),
-                normalize,
-            ])
+if crop_center:
+    _trans = ttransforms.Compose([
+            ttransforms.Resize(224),
+            ttransforms.CenterCrop(112),
+            ttransforms.Resize(224),
+            ttransforms.ToTensor(),
+            normalize,
+        ])
+else:
+    _trans = ttransforms.Compose([
+            ttransforms.Resize(224),
+            ttransforms.CenterCrop(224),
+            ttransforms.ToTensor(),
+            normalize,
+        ])
 
-    ## read & sort img filenames
-    all_filenames = []
-    # read img filenames
-    for filename in os.listdir(valdir):
-        if filename[-4:]=='.png':
-            all_filenames.append(filename)
+## read & sort img filenames
+all_filenames = []
+# read img filenames
+for filename in os.listdir(valdir):
+    if filename[-4:]=='.png':
+        all_filenames.append(filename)
 
-    print('len(all_filenames): ', len(all_filenames))
+print('len(all_filenames): ', len(all_filenames))
 
 
-    # extract feats
-    FEATS = []
-    LABELS = []
-    # loop through batches
-    for idx, filename in enumerate(all_filenames):
-        # read & transform img
-        img = Image.open(os.path.join(valdir, filename)).convert("RGB")
-        img_trans = _trans(img)
+# extract feats
+FEATS = []
+LABELS = []
+# loop through batches
+for idx, filename in enumerate(all_filenames):
+    # read & transform img
+    img = Image.open(os.path.join(valdir, filename)).convert("RGB")
+    img_trans = _trans(img)
 
-        # move to device
-        inputs = img_trans.unsqueeze(0).cuda()
-        # forward pass [with feature extraction]
-        preds = model.backbone(inputs)
+    # move to device
+    inputs = img_trans.unsqueeze(0).cuda()
+    # forward pass [with feature extraction]
+    preds = model.backbone(inputs)
 
-        FEATS.append(activation['feats'].cpu().squeeze().unsqueeze(0).numpy())
-        if save_label:
-            LABELS.append(outputs.cpu().squeeze().unsqueeze(0).numpy())
-    FEATS = np.concatenate(FEATS, axis=0)
+    FEATS.append(activation['feats'].cpu().squeeze().unsqueeze(0).numpy())
     if save_label:
-        LABELS = np.concatenate(LABELS, axis=0)
-    print(FEATS.shape)
+        LABELS.append(outputs.cpu().squeeze().unsqueeze(0).numpy())
+FEATS = np.concatenate(FEATS, axis=0)
+if save_label:
+    LABELS = np.concatenate(LABELS, axis=0)
+print(FEATS.shape)
 
-    # save feats
-    filename = '/mnt/smb/locker/issa-locker/users/Eugénie/'+str(ind)+'_'+model_name+filename_postfix+'.pth'
-    torch.save(FEATS, filename)
-    print(f'saving to {filename}\n')
+# save feats
+filename = '/mnt/smb/locker/issa-locker/users/Eugénie/'+str(ind)+'_'+model_name+filename_postfix+'.pth'
+torch.save(FEATS, filename)
+print(f'saving to {filename}\n')
