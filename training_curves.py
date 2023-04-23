@@ -35,7 +35,7 @@ list_losses = []
 for line in list_lines:
   ind = line.find("loss")
   loss = line[ind+7: ind+17]
-  print(loss)
+  #print(loss)
   if loss: 
     if loss != "or-weig" and loss != "lor-wei" and loss != "olor-we" and loss !="" and loss.find('}')==-1 and loss != "100 90." and loss !='': 
       try: 
@@ -47,7 +47,9 @@ for line in list_lines:
           
           
 print('final len: ', len(list_losses))
-
+print('debut: ', list_losses[0])
+print('fin: ', list_losses[9024])
+      
 plt.plot(list_losses)  
 plt.show()
 plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/training_curves/trainingloss_facesnotexture.png')
