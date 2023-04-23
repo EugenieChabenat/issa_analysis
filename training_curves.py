@@ -11,6 +11,7 @@ faces_texture = 'factorize_avgpool_equivariant_all_bn_v5'
 
 
 path = '/home/ec3731/checkpoints/barlowtwins/equivariant_all_bn_v3_v2/stats.txt'
+path = '/home/ec3731/checkpoints/barlowtwins/notexture/factorize_avgpool_equivariant_all_bn_v5/stats.txt'
 
 list_lines = []
 
@@ -34,7 +35,7 @@ list_losses = []
 for line in list_lines:
   ind = line.find("loss")
   loss = line[ind+7: ind+17]
-  #print(loss)
+  print(loss)
   if loss: 
     if loss != "or-weig" and loss != "lor-wei" and loss != "olor-we" and loss !="" and loss.find('}')==-1 and loss != "100 90." and loss !='': 
       try: 
@@ -49,7 +50,7 @@ print('final len: ', len(list_losses))
 
 plt.plot(list_losses)  
 plt.show()
-plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/training_curves/trainingloss_v3.png')
+plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/training_curves/trainingloss_facesnotexture.png')
 
 """list_loss = []
 
