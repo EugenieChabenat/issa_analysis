@@ -12,6 +12,7 @@ faces_texture = 'factorize_avgpool_equivariant_all_bn_v5'
 
 path = '/home/ec3731/checkpoints/barlowtwins/equivariant_all_bn_v3_v2/stats.txt'
 path = '/home/ec3731/checkpoints/barlowtwins/factorize_avgpool_equivariant_all_bn_v5/stats.txt'
+path = '/home/ec3731/checkpoints/barlowtwins/notexture/factorize_avgpool_equivariant_all_bn_v5/stats.txt'
 
 list_lines = []
 
@@ -51,6 +52,7 @@ print('debut: ', list_losses[0])
 print('fin: ', list_losses[9024])
       
 plt.plot(list_losses)  
+plt.title('training curve faces no texture')
 plt.show()
 plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/training_curves/trainingloss_facesnotexture.png')
 
