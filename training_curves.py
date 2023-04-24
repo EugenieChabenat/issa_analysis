@@ -51,7 +51,8 @@ for line in list_lines:
           
 print('final len: ', len(list_losses))
 print('debut: ', list_losses[0])
-print('fin: ', list_losses[9024])
+#print('fin: ', list_losses[9024])
+print('fin: ', list_losses[7509])
       
 plt.plot(list_losses)  
 plt.title('training curve imagenet factorize avgpool equivariant')
