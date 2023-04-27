@@ -74,7 +74,7 @@ for element in labels:
     
     
 plt.figsize=(60, 30)
-plt.plot(losses, color = 'b')  
+plt.plot(losses, color = 'k')  
 plt.xticks(ticks= new_inds, labels = new_labels)
 #plt.tight_layout()
 plt.title('training curve imagenet factorize avgpool equivariant')
