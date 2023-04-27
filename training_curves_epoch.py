@@ -39,20 +39,16 @@ for line in lines:
 print('len: ', len(list_lines))
 for line in list_lines: 
   print(line)
-  
-list_losses = []
-"""for line in list_lines:
-  ind = line.find("loss")
-  loss = line[ind+7: ind+17]
-  #print(loss)
-  if loss: 
-    if loss != "or-weig" and loss != "lor-wei" and loss != "olor-we" and loss !="" and loss.find('}')==-1 and loss != "100 90." and loss !='': 
-      try: 
-        loss_ = float(loss)
-        #if loss_ <300: 
-        list_losses.append(loss_)
-      except Exception as e: 
-        print(e)"""
+  epochs.append(line["epoch"])
+  steps.append(line["step"])
+  losses.append(line["loss"])
+
+plt.plot(steps, losses)  
+plt.title('training curve imagenet factorize avgpool equivariant')
+plt.show()
+plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/training_curves/losstest1.png')"""
+
+
           
           
 """print('final len: ', len(list_losses))
