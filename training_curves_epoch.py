@@ -53,7 +53,10 @@ for line in list_lines:
   if line["epoch"] == current_e: 
     ind +=1 
   else: 
-    inds.append(ind+inds[-1])
+    if inds: 
+      inds.append(ind+inds[-1])
+    else : 
+      inds.append(ind)
     ind = 0 
     current_e =line["epoch"]
 
