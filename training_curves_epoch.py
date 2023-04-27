@@ -37,6 +37,9 @@ for line in lines:
   
  
 print('len: ', len(list_lines))
+epochs = []
+steps = []
+losses = []
 for line in list_lines: 
   print(line)
   epochs.append(line["epoch"])
