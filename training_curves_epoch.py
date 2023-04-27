@@ -47,7 +47,7 @@ for line in list_lines:
   losses.append(line["loss"])
 
 plt.plot(steps, losses)  
-plt.xticks(np.arange(0, 29, step=1))
+plt.xticks(np.arange(0, 29, step=1000))
 plt.title('training curve imagenet factorize avgpool equivariant')
 plt.show()
 plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/training_curves/losstest1.png')
