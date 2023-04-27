@@ -64,7 +64,7 @@ print(len(inds))
 plt.plot(steps, losses)  
 print(len(losses)/30)
 #ticks = [0, 
-plt.xticks(ticks= inds, labels = np.arange(0, 29))
+plt.xticks(ticks= inds, labels = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29])
 plt.title('training curve imagenet factorize avgpool equivariant')
 plt.show()
 plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/training_curves/losstest1.png')
