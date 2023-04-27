@@ -55,6 +55,7 @@ for line in list_lines:
   else: 
     inds.append(ind)
     ind = 0 
+    current_e =line["epoch"]
 
 print(inds)
 plt.plot(steps, losses)  
