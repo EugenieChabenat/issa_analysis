@@ -40,12 +40,23 @@ print('len: ', len(list_lines))
 epochs = []
 steps = []
 losses = []
+inds = []
+current_e = 0 
+ind = 0 
 for line in list_lines: 
   print(line)
+  
   epochs.append(line["epoch"])
   steps.append(line["step"])
   losses.append(line["loss"])
+  
+  if line["epoch"] == current_e: 
+    ind +=1 
+  else: 
+    inds.append(ind)
+    ind = 0 
 
+print(inds)
 plt.plot(steps, losses)  
 print(len(losses)/30)
 #ticks = [0, 
