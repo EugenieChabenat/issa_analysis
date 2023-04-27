@@ -46,7 +46,7 @@ for line in list_lines:
 plt.plot(steps, losses)  
 plt.title('training curve imagenet factorize avgpool equivariant')
 plt.show()
-plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/training_curves/losstest1.png')"""
+plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/training_curves/losstest1.png')
 
 
           
