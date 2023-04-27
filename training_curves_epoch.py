@@ -59,10 +59,19 @@ for line in list_lines:
       inds.append(ind)
     ind = 0 
     current_e =line["epoch"]
+
+labels = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+new_labels = []
+new_inds= []    
+for idx, element in labels: 
+  if element == 0 or element %5 ==0 or element ==29: 
+    new_labels.append(element)
+    new_inds.append(inds[idx])
+    
     
 plt.figsize=(60, 30)
 plt.plot(losses)  
-plt.xticks(ticks= inds, labels = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29])
+plt.xticks(ticks= new_inds, labels = new_labels)
 #plt.tight_layout()
 plt.title('training curve imagenet factorize avgpool equivariant')
 plt.show()
