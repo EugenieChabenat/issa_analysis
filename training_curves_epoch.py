@@ -40,7 +40,7 @@ print('len: ', len(list_lines))
 epochs = []
 steps = []
 losses = []
-inds = []
+inds = [0]
 current_e = 0 
 ind = 0 
 for line in list_lines: 
