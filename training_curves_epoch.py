@@ -30,9 +30,10 @@ with open(path, 'r') as f:
 print('len: ', len(lines))
 
 list_lines = []
+
 for line in lines: 
   if line[0] == "{": 
-    list_lines.append(line)
+    list_lines.append(json.read(line))
   
  
 print('len: ', len(list_lines))
