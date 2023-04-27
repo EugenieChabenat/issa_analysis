@@ -9,18 +9,19 @@ v2 = 'equivariant_all_bn_v2_v2'
 v3 = 'equivariant_all_bn_v3_v2'
 faces_texture = 'factorize_avgpool_equivariant_all_bn_v5'
 
-
+# path to stats.txt file
 path = '/home/ec3731/checkpoints/barlowtwins/equivariant_all_bn_v3_v2/stats.txt'
 path = '/home/ec3731/checkpoints/barlowtwins/factorize_avgpool_equivariant_all_bn_v5/stats.txt'
 #path = '/home/ec3731/checkpoints/barlowtwins/notexture/factorize_avgpool_equivariant_all_bn_v5/stats.txt'
 path = '/home/ec3731/checkpoints/barlowtwins/factorize_avgpool_equivariant_all_bn_injection_v1/stats.txt'
-
+# -- 
 
 list_lines = []
 
 #with open(path) as f: 
 #  data = f.read()
-  
+
+# read file, remove lines that are not epochs, redump it and then read as dict 
 
 #print('data type:', data.type)
 with open(path, 'r') as f:
@@ -30,12 +31,16 @@ print('len: ', len(lines))
 
 list_lines = []
 for line in lines: 
-  if line[:4] != "main": 
+  if line[0] == "{": 
     list_lines.append(line)
-
+  
+ 
 print('len: ', len(list_lines))
+for line in list_lines: 
+  print(line)
+  
 list_losses = []
-for line in list_lines:
+"""for line in list_lines:
   ind = line.find("loss")
   loss = line[ind+7: ind+17]
   #print(loss)
@@ -46,10 +51,10 @@ for line in list_lines:
         #if loss_ <300: 
         list_losses.append(loss_)
       except Exception as e: 
-        print(e)
+        print(e)"""
           
           
-print('final len: ', len(list_losses))
+"""print('final len: ', len(list_losses))
 print('debut: ', list_losses[0])
 #print('fin: ', list_losses[9024])
 print('fin: ', list_losses[7500])
@@ -57,7 +62,7 @@ print('fin: ', list_losses[7500])
 plt.plot(list_losses)  
 plt.title('training curve imagenet factorize avgpool equivariant')
 plt.show()
-plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/training_curves/trainingloss_v1_f_a_e.png')
+plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/training_curves/trainingloss_v1_f_a_e.png')"""
 
 """list_loss = []
 
