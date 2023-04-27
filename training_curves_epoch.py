@@ -61,13 +61,16 @@ for line in list_lines:
     current_e =line["epoch"]
 
 labels = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
-labels = np.arange(0, 29, step=1)
+#labels = np.arange(0, 29, step=1)
 new_labels = []
-new_inds= []    
-for idx, element in labels: 
+new_inds= []  
+i = 0
+for element in labels: 
+  
   if element == 0 or element %5 ==0 or element ==29: 
     new_labels.append(element)
-    new_inds.append(inds[idx])
+    new_inds.append(inds[i])
+  i +=1
     
     
 plt.figsize=(60, 30)
