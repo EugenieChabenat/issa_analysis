@@ -60,7 +60,7 @@ for line in list_lines:
     ind = 0 
     current_e =line["epoch"]
 
-print(inds)
+print(len(inds))
 plt.plot(steps, losses)  
 print(len(losses)/30)
 #ticks = [0, 
