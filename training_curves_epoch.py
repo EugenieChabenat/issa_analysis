@@ -15,7 +15,7 @@ path = '/home/ec3731/checkpoints/barlowtwins/factorize_avgpool_equivariant_all_b
 #path = '/home/ec3731/checkpoints/barlowtwins/factorize_avgpool_equivariant_all_bn_injection_v1/stats.txt'
 #path = '/home/ec3731/checkpoints/barlowtwins/factorize_avgpool_equivariant_all_bn_injection_v1/stats.txt'
 path = '/home/ec3731/checkpoints/barlowtwins/factorize_avgpool_equivariant_all_bn_v5/stats.txt'
-path = '/home/ec3731/checkpoints/barlowtwins/equivariant_all_bn_v2_v2/stats.txt'
+#path = '/home/ec3731/checkpoints/barlowtwins/equivariant_all_bn_v2_v2/stats.txt'
 
 # -- 
 
@@ -53,15 +53,16 @@ for line in list_lines:
   steps.append(line["step"])
   losses.append(line["loss"])
   
-  if line["epoch"] == current_e: 
-    ind +=1 
-  else: 
-    if inds: 
-      inds.append(ind+inds[-1])
-    else : 
-      inds.append(ind)
-    ind = 0 
-    current_e =line["epoch"]
+  while epoch <= 29: 
+    if line["epoch"] == current_e: 
+      ind +=1 
+    else: 
+      if inds: 
+        inds.append(ind+inds[-1])
+      else : 
+        inds.append(ind)
+      ind = 0 
+      current_e =line["epoch"]
 
 labels = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
 #labels = np.arange(0, 29, step=1)
@@ -80,8 +81,8 @@ plt.figsize=(60, 30)
 plt.plot(losses, color = 'k')  
 plt.xticks(ticks= new_inds, labels = new_labels)
 #plt.tight_layout()
-plt.title('training curve imagenet equivariant_all_bn v2')
+plt.title('training curve faces texture factorize_avgpool_equivariant_all_bn_v5')
 plt.show()
-plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/training_curves/equivariant_all_bn_v2_v2.png')
+plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/training_curves/texture_factorize_avgpool_equivariant_all_bn_v5.png')
     
 
