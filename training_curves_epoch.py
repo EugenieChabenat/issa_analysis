@@ -36,8 +36,7 @@ list_lines = []
 
 for line in lines: 
   if line[0] == "{": 
-    try:  
-      list_lines.append(json.loads(line))
+    list_lines.append(json.loads(line))
   
  
 print('len: ', len(list_lines))
