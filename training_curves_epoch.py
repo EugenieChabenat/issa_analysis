@@ -44,7 +44,7 @@ inds = [0]
 current_e = 0 
 ind = 0 
 for line in list_lines: 
-  print(line)
+  #print(line)
   
   epochs.append(line["epoch"])
   steps.append(line["step"])
@@ -80,36 +80,5 @@ plt.xticks(ticks= new_inds, labels = new_labels)
 plt.title('training curve imagenet factorize avgpool equivariant')
 plt.show()
 plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/training_curves/losstest1.png')
+    
 
-
-          
-          
-"""print('final len: ', len(list_losses))
-print('debut: ', list_losses[0])
-#print('fin: ', list_losses[9024])
-print('fin: ', list_losses[7500])
-      
-plt.plot(list_losses)  
-plt.title('training curve imagenet factorize avgpool equivariant')
-plt.show()
-plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/training_curves/trainingloss_v1_f_a_e.png')"""
-
-"""list_loss = []
-
-
-for stats_epoch in list_lines[:1]: 
-  # each step for the epoch 
-  print(stats_epoch)
-  for stats_step in stats_epoch[:5]: 
-    print('step: ', stats_step)
-    if stats_step[2:6] == str("epoch"): 
-      print(stats_step)
-    #list_loss.append(stats_step["loss"])
-  
-  
-  #list_loss.append(stats_epoch["loss"])
-
-  
-plt.plot(list_loss)  
-plt.save('/mnt/smb/locker/issa-locker/users/Eugénie/trainingloss.png')
-#print('content 1 line:', list_lines[0])"""
