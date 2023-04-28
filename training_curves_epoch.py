@@ -53,7 +53,7 @@ for line in list_lines:
   steps.append(line["step"])
   losses.append(line["loss"])
   
-  while epoch <= 29: 
+  while line["epoch"] <= 29: 
     if line["epoch"] == current_e: 
       ind +=1 
     else: 
