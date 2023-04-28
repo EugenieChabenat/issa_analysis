@@ -81,8 +81,8 @@ plt.figsize=(60, 30)
 plt.plot(losses, color = 'k')  
 plt.xticks(ticks= new_inds, labels = new_labels)
 #plt.tight_layout()
-plt.title('training curve imagenet equivariant_all_bn_v3_v2')
+plt.title('training curve imagenet equivariant_all_bn_v1_v2')
 plt.show()
-plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/training_curves/equivariant_all_bn_v3_v2.png')
+plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/training_curves/equivariant_all_bn_v1_v2.png')
     
 
