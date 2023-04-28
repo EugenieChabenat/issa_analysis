@@ -48,7 +48,7 @@ current_e = 0
 ind = 0 
 for line in list_lines: 
   #print(line)
-  while line["epoch"] <= 29:
+  if line["epoch"] <= 29:
     epochs.append(line["epoch"])
     steps.append(line["step"])
     losses.append(line["loss"])
