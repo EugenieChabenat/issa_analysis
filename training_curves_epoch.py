@@ -10,11 +10,11 @@ v3 = 'equivariant_all_bn_v3_v2'
 faces_texture = 'factorize_avgpool_equivariant_all_bn_v5'
 
 # path to stats.txt file
-path = '/home/ec3731/checkpoints/barlowtwins/equivariant_all_bn_v3_v2/stats.txt'
-path = '/home/ec3731/checkpoints/barlowtwins/factorize_avgpool_equivariant_all_bn_v5/stats.txt'
+path = '/home/ec3731/checkpoints/barlowtwins/equivariant_all_bn_v1_v2/stats.txt'
+#path = '/home/ec3731/checkpoints/barlowtwins/factorize_avgpool_equivariant_all_bn_v5/stats.txt'
 #path = '/home/ec3731/checkpoints/barlowtwins/factorize_avgpool_equivariant_all_bn_injection_v1/stats.txt'
 #path = '/home/ec3731/checkpoints/barlowtwins/factorize_avgpool_equivariant_all_bn_injection_v1/stats.txt'
-path = '/home/ec3731/checkpoints/barlowtwins/notexture/original_v5/stats.txt'
+#path = '/home/ec3731/checkpoints/barlowtwins/notexture/original_v5/stats.txt'
 #path = '/home/ec3731/checkpoints/barlowtwins/equivariant_all_bn_v2_v2/stats.txt'
 
 # -- 
