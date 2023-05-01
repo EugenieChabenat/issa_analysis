@@ -64,7 +64,7 @@ for line in list_lines:
       ind = 0 
       current_e =line["epoch"]
 print(current_e) 
-labels = [0, 1, 2, 3, 4, 5]#, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+labels = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
 #labels = np.arange(0, 29, step=1)
 new_labels = []
 new_inds= []  
@@ -81,8 +81,8 @@ plt.figsize=(60, 30)
 plt.plot(losses, color = 'k')  
 plt.xticks(ticks= new_inds, labels = new_labels)
 #plt.tight_layout()
-plt.title('training curve imagenet equivariant_all_bn_v1_v2')
+plt.title('training curve imagenet equivariant_all_bn_v1_v2 - backbone')
 plt.show()
-plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/training_curves/equivariant_all_bn_v1_v2.png')
+plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/training_curves/backbone_equivariant_all_bn_v1_v2.png')
     
 
