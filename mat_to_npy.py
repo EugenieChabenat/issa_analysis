@@ -10,6 +10,7 @@ import numpy as np
 def mat_to_npy(matfile, pyfile=None):
     if not pyfile:
         pyfile = "stim_matrix.npy"
+    matfile = '/mnt/smb/locker/issa-locker/users/Eugénie/datasets/stim_matrix.mat'
     mat = mio.loadmat(matfile)
     print(mat.keys())
     
@@ -22,7 +23,7 @@ def mat_to_npy(matfile, pyfile=None):
     rust = np.load('../Desktop/rust_images.npy')
     print('rust shape:', rust.shape)
     print('stim shape: ', mat['stim_matrix'].shape)
-    np.save('stim_matrix', mat['stim_matrix'])
+    #np.save('stim_matrix', mat['stim_matrix'])
     np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/stim_matrix', mat['stim_matrix'][:, :, 0, :, :, :])
     
     
