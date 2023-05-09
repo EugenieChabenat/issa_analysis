@@ -26,6 +26,7 @@ def mat_to_npy(matfile, pyfile=None):
     #np.save('stim_matrix', mat['stim_matrix'])
     print('final shape: ', mat['stim_matrix'][:, :, 0, :, :, :].shape)
     mat = mat['stim_matrix'][:, :, 0, :, :, :].reshape(2, 3, 11, 512, 512)
+    print('after reshape: ', mat.shape)
     #np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/stim_matrix', mat['stim_matrix'][:, :, 0, :, :, :])
     np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/stim_matrix', mat)
     
