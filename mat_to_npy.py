@@ -16,8 +16,9 @@ def mat_to_npy(matfile, pyfile=None):
     # read mkturk test 
     data = np.load('../Desktop/images.npy')
     print('data shape:', data.shape)
+    rust = np.load('../Desktop/rust_images.npy')
+    print('rust shape:', rust.shape)
     print('stim shape: ', mat['stim_matrix'].shape)
-    
     np.save('stim_matrix', mat['stim_matrix'])
     
     
