@@ -23,6 +23,7 @@ def mat_to_npy(matfile, pyfile=None):
     print('rust shape:', rust.shape)
     print('stim shape: ', mat['stim_matrix'].shape)
     np.save('stim_matrix', mat['stim_matrix'])
+    np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/stim_matrix', mat['stim_matrix'][:, :, 0, :, :, :])
     
     
     """print(mat['artificial_movie_labels'])
