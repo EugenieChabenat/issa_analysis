@@ -21,7 +21,8 @@ def mat_to_py(matfile, pyfile=None):
             l = v.tolist()
             fd.write(k+" = ")
             pprint.pprint(l, fd, indent=4)
-            print "processed %s"%k
+            #print("processed %s"%k)
+            print('process')
         except:
             print "error processing %s"%k
 
