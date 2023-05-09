@@ -35,8 +35,8 @@ if __name__=="__main__":
     try:
         matfile = sys.argv[1]
     except:
-        print "convert mat files to python files"
-        print "usage: matfile inputfile.mat [outputfile.py]"
+        print("convert mat files to python files")
+        print("usage: matfile inputfile.mat [outputfile.py]")
     try:
         pyfile = sys.argv[2]
     except:
