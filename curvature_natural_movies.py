@@ -47,10 +47,10 @@ from sklearn import svm
 # -- 
 
 parser = argparse.ArgumentParser(description='Barlow Twins Training')
-"""parser.add_argument('--version', default=1, type=int, metavar='N',
+parser.add_argument('--version', default=1, type=int, metavar='N',
                     help='version of model')
 parser.add_argument('--dataset', default='imagenet', type=str,
-                    help='dataset on which to train the model')"""
+                    help='dataset on which to train the model')
 parser.add_argument('--port-id', default=58472, type=int, metavar='N',
                     help='distributed training port number (default: 58472)')
 parser.add_argument('--workers', default=8, type=int, metavar='N',
@@ -61,10 +61,10 @@ parser.add_argument('--batch-size', default=4096, type=int, metavar='N',
                     help='mini-batch size')
 parser.add_argument('--learning-rate', default=0.2, type=float, metavar='LR',
                     help='base learning rate')
-"""parser.add_argument('--weight-decay', default=1e-6, type=float, metavar='W',
+parser.add_argument('--weight-decay', default=1e-6, type=float, metavar='W',
                     help='weight decay')
 parser.add_argument('--lambd', default=0.0051, type=float, metavar='L',
-                    help='weight on off-diagonal terms')"""
+                    help='weight on off-diagonal terms')
 parser.add_argument('--projector', default='8192-8192-8192', type=str,
                     metavar='MLP', help='projector MLP')
 parser.add_argument('--scale-loss', default=0.024, type=float,
@@ -132,7 +132,7 @@ def main():
 # ------------------------------------------------------------------------------------------------------------------      
 def load_model(model_name, args): 
   print(f"loading {model_name}")
-  Model = importlib.import_module('.' + args.name, 'models').Model
+  Model = importlib.import_module('.' + model_name, 'models').Model
   model = Model(args)
   model = torch.nn.DataParallel(model).cuda()
   
