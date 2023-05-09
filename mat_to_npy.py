@@ -13,6 +13,9 @@ def mat_to_npy(matfile, pyfile=None):
     mat = mio.loadmat(matfile)
     print(mat.keys())
     
+    mat_info = mio.loadmat("../Downloads/stimulus/stim_info.mat")
+    print(mat_info)
+    
     # read mkturk test 
     data = np.load('../Desktop/images.npy')
     print('data shape:', data.shape)
