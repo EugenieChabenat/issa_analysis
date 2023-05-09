@@ -24,7 +24,7 @@ def mat_to_py(matfile, pyfile=None):
             #print("processed %s"%k)
             print('process')
         except:
-            print "error processing %s"%k
+            print("error processing %s")
 
 
     fd.close()
