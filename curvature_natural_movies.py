@@ -139,7 +139,7 @@ def load_model(model_name, args):
   model = torch.nn.DataParallel(model).cuda()
   
   #ckpt = torch.load('/home/ec3731/checkpoints/barlowtwins/notexture/original_v5/checkpoint.pth')
-  ckpt = torch.load('/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/factorize_avgpool_equivariant_all_bn_injection_v1/checkpoint.pth')
+  ckpt = torch.load('/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/backbone/factorize_avgpool_equivariant_all_bn_injection_v1/checkpoint.pth')
   #ckpt = torch.load('/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/equivariant_all_bn_v2_v2/checkpoint.pth')
          
   model.load_state_dict(ckpt["model"])
