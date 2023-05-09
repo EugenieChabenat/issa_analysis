@@ -13,6 +13,10 @@ def mat_to_npy(matfile, pyfile=None):
     mat = mio.loadmat(matfile)
     print(mat.keys())
     
+    # read mkturk test 
+    data = np.load('../Desktop/images.npy')
+    print(data)
+    
     np.save('stim_matrix', mat)
     
     
