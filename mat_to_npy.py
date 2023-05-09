@@ -12,7 +12,7 @@ def mat_to_npy(matfile, pyfile=None):
     mat = mio.loadmat(matfile)
     print(mat.keys())
     
-    dataframe = pd.DataFrame(colums = [mat.keys()])
+    dataframe = pd.DataFrame(columns = [mat.keys()])
     print(dataframe)
     
     fd = file(pyfile,"w")
