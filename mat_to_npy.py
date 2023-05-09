@@ -12,6 +12,9 @@ def mat_to_npy(matfile, pyfile=None):
     mat = mio.loadmat(matfile)
     print(mat.keys())
     
+    
+    print(mat['artificial_movie_labels'])
+    
     dataframe = pd.DataFrame(columns = ['artificial_movie_labels', 'contrast_movie_labels', 'image_paths', 'natural_movie_labels', 
                                         'stim_matrix', 'stim_matrix_blurred'])
     dataframe['artificial_movie_labels'] = mat['artificial_movie_labels']
