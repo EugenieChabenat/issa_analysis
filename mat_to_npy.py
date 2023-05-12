@@ -18,6 +18,11 @@ def mat_to_npy(matfile=None, pyfile=None):
     print(mat_info)
     print(mat_info.keys())
     
+    print('articifial labels: ', mat_info['artificial_movie_labels'])
+    print('natural labels: ', mat_info['natural_movie_labels'])
+    print('contrast labels: ', mat_info['constrat_movie_labels'])
+    
+    
     # read mkturk test 
     ##data = np.load('../Desktop/images.npy')
     #print('data shape:', data.shape)
