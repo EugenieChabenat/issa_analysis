@@ -24,11 +24,12 @@ def mat_to_npy(matfile, pyfile=None):
     #print('rust shape:', rust.shape)
     print('stim shape: ', mat['stim_matrix'].shape)
     #np.save('stim_matrix', mat['stim_matrix'])
-    print('final shape: ', mat['stim_matrix'][:, :, 6, :, :, :].shape)
-    mat = mat['stim_matrix'][:, :, 0, :, :, :].reshape(2,11, 3,  512, 512)
-    print('after reshape: ', mat.shape)
+    print('final shape: ', mat['stim_matrix'][:, :, 7, :, :, :].shape)
+    for i in range(10): 
+        mat = mat['stim_matrix'][:, :, i, :, :, :].reshape(2,11, 3,  512, 512)
+        print('after reshape: ', mat.shape)
     #np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/stim_matrix', mat['stim_matrix'][:, :, 0, :, :, :])
-    np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/stim_matrix6', mat)
+        np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/stim_matrix'+str(i), mat)
     
     
     """print(mat['artificial_movie_labels'])
