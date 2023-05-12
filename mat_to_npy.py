@@ -26,10 +26,10 @@ def mat_to_npy(matfile, pyfile=None):
     #np.save('stim_matrix', mat['stim_matrix'])
     print('final shape: ', mat['stim_matrix'][:, :, 7, :, :, :].shape)
     for i in range(10): 
-        mat = mat['stim_matrix'][:, :, i, :, :, :].reshape(2,11, 3,  512, 512)
+        mat_ = mat['stim_matrix'][:, :, i, :, :, :].reshape(2,11, 3,  512, 512)
         print('after reshape: ', mat.shape)
     #np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/stim_matrix', mat['stim_matrix'][:, :, 0, :, :, :])
-        np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/stim_matrix'+str(i), mat)
+        np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/stim_matrix'+str(i), mat_)
     
     
     """print(mat['artificial_movie_labels'])
