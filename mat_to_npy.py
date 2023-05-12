@@ -20,7 +20,7 @@ def mat_to_npy(matfile=None, pyfile=None):
     
     print('articifial labels: ', mat_info['artificial_movie_labels'])
     print('natural labels: ', mat_info['natural_movie_labels'])
-    print('contrast labels: ', mat_info['constrat_movie_labels'])
+    print('contrast labels: ', mat_info['contrast_movie_labels'])
     
     
     # read mkturk test 
