@@ -28,7 +28,7 @@ def mat_to_npy(matfile, pyfile=None):
     mat = mat['stim_matrix'][:, :, 0, :, :, :].reshape(2,11, 3,  512, 512)
     print('after reshape: ', mat.shape)
     #np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/stim_matrix', mat['stim_matrix'][:, :, 0, :, :, :])
-    np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/stim_matrix1', mat)
+    np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/stim_matrix2', mat)
     
     
     """print(mat['artificial_movie_labels'])
