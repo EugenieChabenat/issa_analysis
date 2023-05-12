@@ -15,7 +15,7 @@ def mat_to_npy(matfile=None, pyfile=None):
     #print(mat.keys())
     
     mat_info = mio.loadmat("/mnt/smb/locker/issa-locker/users/Eugénie/datasets/stim_info.mat")
-    ##print(mat_info)
+    print(mat_info)
     
     # read mkturk test 
     ##data = np.load('../Desktop/images.npy')
