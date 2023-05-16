@@ -17,7 +17,8 @@ faces_texture = 'factorize_avgpool_equivariant_all_bn_v5'
 #path = '/home/ec3731/checkpoints/barlowtwins/notexture/original_v5/stats.txt'
 #path = '/home/ec3731/checkpoints/barlowtwins/equivariant_all_bn_v3_v2/stats.txt'
 #path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/backbone/factorize_avgpool_equivariant_all_bn_injection_v1/stats.txt'
-path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/faces_notexture/original_v5/stats.txt'
+#path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/faces_notexture/original_v5/stats.txt'
+path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/before_projector/fact_equi_conv_injection_v1/stats.txt'
 
 # -- 
 
@@ -83,8 +84,8 @@ plt.figsize=(60, 30)
 plt.plot(losses, color = 'k')  
 plt.xticks(ticks= new_inds, labels = new_labels)
 #plt.tight_layout()
-plt.title('training curve faces original_v5 - notexture')
+plt.title('training curve before projector - v1')
 plt.show()
-plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/training_curves/notexture_original_v5.png')
+plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/training_curves/before_projector_injection_v1.png')
     
 
