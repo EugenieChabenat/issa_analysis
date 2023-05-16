@@ -18,7 +18,7 @@ def mat_to_npy(matfile=None, pyfile=None):
     print(mat_info)
     print(mat_info.keys())
     
-    print('articifial labels: ', mat_info['artificial_movie_labels'][0][0])
+    print('articifial labels: ', mat_info['artificial_movie_labels'][0][0].type)
     #print('natural labels: ', mat_info['natural_movie_labels'])
     #print('contrast labels: ', mat_info['contrast_movie_labels'])
     
