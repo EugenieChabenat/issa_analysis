@@ -18,7 +18,7 @@ faces_texture = 'factorize_avgpool_equivariant_all_bn_v5'
 #path = '/home/ec3731/checkpoints/barlowtwins/equivariant_all_bn_v3_v2/stats.txt'
 #path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/backbone/factorize_avgpool_equivariant_all_bn_injection_v1/stats.txt'
 #path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/faces_notexture/original_v5/stats.txt'
-path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/pretrained/factorize_avgpool_equivariant_all_bn_v5/factorize_avgpool_equivariant_all_bn_v5/stats.txt'
+path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/pretrained/factorize_avgpool_equivariant_all_bn_v5/factorize_avgpool_equivariant_all_bn_v5/stats.txt'
 
 # -- 
 
