@@ -46,16 +46,16 @@ def mat_to_npy(matfile=None, pyfile=None):
     # artificial
     mat_ = mat['stim_matrix'][:, 0 , :, :, :, :].reshape(2, 10, 11,  512, 512)
     print('after reshape: ', mat_.shape)
-    np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/artificial_matrix'+str(i), mat_)
+    np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/artificial_matrix', mat_)
     
     # contrast 
     mat_ = mat['stim_matrix'][:, 1 , :, :, :, :].reshape(2, 10, 11,  512, 512)
     print('after reshape: ', mat_.shape)
-    np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/contrast_matrix'+str(i), mat_)
+    np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/contrast_matrix', mat_)
     
     mat_ = mat['stim_matrix'][:, 2 , :, :, :, :].reshape(2, 10, 11,  512, 512)
     print('after reshape: ', mat_.shape)
-    np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/natural_matrix'+str(i), mat_)
+    np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/natural_matrix', mat_)
         
     """print(mat['artificial_movie_labels'])
     
