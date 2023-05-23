@@ -44,8 +44,10 @@ def mat_to_npy(matfile=None, pyfile=None):
     #for i in range(10): 
     
     # artificial
-    mat_ = mat['stim_matrix'][:, :1 , :, :, :, :].reshape(2, 10, 11,  512, 512)
-    print('after reshape: ', mat_.shape)
+    mat_ = mat['stim_matrix'][:, :1 , :, :, :, :]
+    print('before reshape: ', mat_.shape)
+    mat__ = mat_.reshape(2, 10, 11,  512, 512)
+    print('after reshape: ', mat__.shape)
     np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/art_nat_matrix', mat_)
     
     # contrast 
