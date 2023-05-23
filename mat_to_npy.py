@@ -40,11 +40,22 @@ def mat_to_npy(matfile=None, pyfile=None):
         np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/stim_matrix'+str(i), mat_)"""
     
     # save all 10 movies for one type 
-    for i in range(3): 
-        mat_ = mat['stim_matrix'][:, :, i, :, :, :].reshape(2,11, 3,  512, 512)
-        print('after reshape: ', mat_.shape)
-    #np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/stim_matrix', mat['stim_matrix'][:, :, 0, :, :, :])
-        #np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/stim_matrix'+str(i), mat_)
+    #  (2, 3, 10, 512, 512, 11)
+    #for i in range(10): 
+    
+    # artificial
+    mat_ = mat['stim_matrix'][:, 0 , :, :, :, :].reshape(2, 10, 11,  512, 512)
+    print('after reshape: ', mat_.shape)
+    np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/artificial_matrix'+str(i), mat_)
+    
+    # contrast 
+    mat_ = mat['stim_matrix'][:, 1 , :, :, :, :].reshape(2, 10, 11,  512, 512)
+    print('after reshape: ', mat_.shape)
+    np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/contrast_matrix'+str(i), mat_)
+    
+    mat_ = mat['stim_matrix'][:, 2 , :, :, :, :].reshape(2, 10, 11,  512, 512)
+    print('after reshape: ', mat_.shape)
+    np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/natural_matrix'+str(i), mat_)
         
     """print(mat['artificial_movie_labels'])
     
