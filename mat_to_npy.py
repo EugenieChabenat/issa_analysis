@@ -47,7 +47,8 @@ def mat_to_npy(matfile=None, pyfile=None):
     print('initial: ', mat['stim_matrix'].shape)
     mat_ = mat['stim_matrix'][:, :2 , :, :, :, :]
     print('before reshape: ', mat_.shape)
-    mat__ = mat_.reshape(2, 10, 11,  512, 512)
+    #mat__ = mat_.reshape(2, 10, 11,  512, 512)
+    mat__ = mat[0, : , :, :, :, :]
     print('after reshape: ', mat__.shape)
     np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/art_nat_matrix', mat_)
     
