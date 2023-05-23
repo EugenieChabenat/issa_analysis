@@ -31,13 +31,21 @@ def mat_to_npy(matfile=None, pyfile=None):
     print('stim shape: ', mat['stim_matrix'].shape)
     #np.save('stim_matrix', mat['stim_matrix'])
     print('final shape: ', mat['stim_matrix'][:, :, 7, :, :, :].shape)
+    
+    # save 3 movies 
     """for i in range(10): 
         mat_ = mat['stim_matrix'][:, :, i, :, :, :].reshape(2,11, 3,  512, 512)
         print('after reshape: ', mat_.shape)
     #np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/stim_matrix', mat['stim_matrix'][:, :, 0, :, :, :])
         np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/stim_matrix'+str(i), mat_)"""
     
-    
+    # save all 10 movies for one type 
+    for i in range(3): 
+        mat_ = mat['stim_matrix'][:, :, i, :, :, :].reshape(2,11, 3,  512, 512)
+        print('after reshape: ', mat_.shape)
+    #np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/stim_matrix', mat['stim_matrix'][:, :, 0, :, :, :])
+        #np.save('/mnt/smb/locker/issa-locker/users/Eugénie/datasets/stim_matrix'+str(i), mat_)
+        
     """print(mat['artificial_movie_labels'])
     
     dataframe = pd.DataFrame(columns = ['artificial_movie_labels', 'contrast_movie_labels', 'image_paths', 'natural_movie_labels', 
