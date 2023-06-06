@@ -10,7 +10,7 @@ Use it for training your neural networks in ML/DL projects.
 '''
 
 # Path to image directory
-path = "/mnt/smb/locker/issa-locker/users/Eugénie/datasets/faces_test/"
+path = "/mnt/smb/locker/issa-locker/users/Eugénie/datasets/faces_test/500_images_ood0"
 dirs = os.listdir( path )
 dirs.sort()
 x_train=[]
