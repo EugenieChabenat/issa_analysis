@@ -29,4 +29,4 @@ if __name__ == "__main__":
     
     # Convert and save the list of images in '.npy' format
     imgset=np.array(x_train)
-    np.save("imgds.npy",imgset)
+    np.save("/mnt/smb/locker/issa-locker/users/Eugénie/datasets/imgds.npy",imgset)
