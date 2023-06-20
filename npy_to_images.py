@@ -5,7 +5,8 @@ import matplotlib.image as im
 
 save_images = False 
 hk2 = False 
-hvm = True 
+hvm = False
+mkturk = True 
 # --------------------------------------------------------------------------------------------------
 # HK2 DATASET 
 # --------------------------------------------------------------------------------------------------
@@ -95,16 +96,19 @@ if hvm:
 # --------------------------------------------------------------------------------------------------
 # MKTURK DATASET 
 # --------------------------------------------------------------------------------------------------
+if mkturk: 
+  path = '/mnt/smb/locker/issa-locker/users/hc3190/datasets/imagesets/mkturk/test/images.npy'
+  img_array = np.load(path)
+  print('size: ', img_array.shape)
 
-"""path = '/mnt/smb/locker/issa-locker/users/hc3190/datasets/imagesets/mkturk/test/images.npy'
-img_array = np.load(path)
-print('size: ', img_array.shape)
-
-#img_array = img_array.reshape((432, 256, 256, 3))
-if save_images: 
-  for j in range(img_array.shape[0]): 
-    for i in range(img_array.shape[1]):
-      plt.imshow(img_array[j][i].reshape((256, 256, 3)))
-      im.imsave('/mnt/smb/locker/issa-locker/users/Eugénie/images/mkturk_test/folder_{}/image{}.png'.format(j,i), img_array[j][i].reshape((256, 256, 3))) 
-      plt.show()"""
-
+  #img_array = img_array.reshape((432, 256, 256, 3))
+  if save_images: 
+    for j in range(img_array.shape[0]): 
+      for i in range(img_array.shape[1]):
+        plt.imshow(img_array[j][i].reshape((256, 256, 3)))
+        im.imsave('/mnt/smb/locker/issa-locker/users/Eugénie/images/mkturk_test/folder_{}/image{}.png'.format(j,i), img_array[j][i].reshape((256, 256, 3))) 
+        plt.show()
+  
+  path = '/mnt/smb/locker/issa-locker/users/hc3190/datasets/imagesets/mkturk/test/target_labels.json'
+  labels = np.load(path)
+  print('size: ', labels.shape)
