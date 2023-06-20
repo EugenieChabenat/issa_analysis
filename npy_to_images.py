@@ -40,7 +40,7 @@ print('size: ', img_array.shape)
 #img_array = img_array.reshape((432, 256, 256, 3))
 for j in range(img_array.shape[0]): 
   for i in range(img_array.shape[1]):
-    plt.imshow(img_array[j][i].reshape((256, 256, 3)), cmap='gray')
+    plt.imshow(img_array[j][i].reshape((256, 256, 3)))
     im.imsave('/mnt/smb/locker/issa-locker/users/Eugénie/images/mkturk_test/folder_{}/image{}.png'.format(j,i), img_array[i]) 
     plt.show()
 
