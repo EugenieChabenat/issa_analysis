@@ -37,7 +37,7 @@ path = '/mnt/smb/locker/issa-locker/users/hc3190/datasets/imagesets/mkturk/test/
 img_array = np.load(path)
 print('size: ', img_array.shape)
 
-img_array = img_array.reshape((432, 3, 256, 256))
+img_array = img_array.reshape((432, 256, 256, 3))
 
 for i in range(img_array.shape[0]):
   plt.imshow(img_array[i], cmap='gray')
