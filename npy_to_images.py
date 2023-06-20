@@ -113,5 +113,8 @@ if mkturk:
   path = '/mnt/smb/locker/issa-locker/users/hc3190/datasets/imagesets/mkturk/test/target_labels.json'
   f = open(path)
   labels = json.load(f)
-  print('size: ', labels.shape)
+  print('length of dict labels: ', len(labels))
+  idx = 0
+  for item in labels.items(): 
+    print(item)
   f.close()
