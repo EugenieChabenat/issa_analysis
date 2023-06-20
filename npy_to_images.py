@@ -7,7 +7,7 @@ path = '/mnt/smb/locker/issa-locker/users/hc3190/datasets/imagesets/HK2/HK2_imag
 img_array = np.load(path)
 print('size: ', img_array.shape)
 
-for i in range(3):
+for i in range(25):
   plt.imshow(img_array[i], cmap='gray')
   im.imsave('/mnt/smb/locker/issa-locker/users/Eugénie/images/hk2/image{}.png'.format(i), img_array[i]) 
   plt.show()
