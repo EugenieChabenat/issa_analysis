@@ -48,6 +48,9 @@ if hvm:
   path = '/mnt/smb/locker/issa-locker/users/hc3190/datasets/imagesets/HVM/HVM_obj_categories.npy'
   obj_array = np.load(path)
   print('size: ', obj_array.shape)
+  print('categories examples: ')
+  for i in range(10): 
+    print(obj_array[i])
   
   print('\nobject category to idx')
   path = '/mnt/smb/locker/issa-locker/users/hc3190/datasets/imagesets/HVM/HVM_obj_category_to_idx.npy'
@@ -63,12 +66,21 @@ if hvm:
   path = '/mnt/smb/locker/issa-locker/users/hc3190/datasets/imagesets/HVM/HVM_obj_classes.npy'
   obj_array = np.load(path)
   print('size: ', obj_array.shape)
-  
+  print('classes examples: ')
+  for i in range(10): 
+    print(obj_array[i])
+    
+    
+    
   print('\nobject poses')
   path = '/mnt/smb/locker/issa-locker/users/hc3190/datasets/imagesets/HVM/HVM_obj_poses.npy'
   obj_array = np.load(path)
   print('size: ', obj_array.shape)
-  
+  print('poses examples: ')
+  for i in range(10): 
+    print(obj_array[i])
+    
+    
   print('\nobject positions')
   path = '/mnt/smb/locker/issa-locker/users/hc3190/datasets/imagesets/HVM/HVM_obj_positions.npy'
   obj_array = np.load(path)
