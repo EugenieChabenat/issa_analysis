@@ -111,5 +111,7 @@ if mkturk:
         plt.show()
   
   path = '/mnt/smb/locker/issa-locker/users/hc3190/datasets/imagesets/mkturk/test/target_labels.json'
-  labels = json.load(path)
+  f = open(path)
+  labels = json.load(f)
   print('size: ', labels.shape)
+  f.close()
