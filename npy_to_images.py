@@ -2,6 +2,7 @@ import numpy as np
 
 from matplotlib import pyplot as plt
 import matplotlib.image as im
+import json
 
 save_images = False 
 hk2 = False 
@@ -110,5 +111,5 @@ if mkturk:
         plt.show()
   
   path = '/mnt/smb/locker/issa-locker/users/hc3190/datasets/imagesets/mkturk/test/target_labels.json'
-  labels = np.load(path)
+  labels = json.load(path)
   print('size: ', labels.shape)
