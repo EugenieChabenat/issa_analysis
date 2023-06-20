@@ -7,5 +7,5 @@ img_array = np.load(path)
 print('size: ', img_array.shape)
 
 for i in range(3):
-  plt.imshow(data[i], cmap='gray')
+  plt.imshow(img_array[i], cmap='gray')
   plt.show()
