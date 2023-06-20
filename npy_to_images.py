@@ -21,7 +21,9 @@ if save_images:
 path = '/mnt/smb/locker/issa-locker/users/hc3190/datasets/imagesets/HK2/HK2_classes.npy'
 classes_array = np.load(path)
 print('size: ', classes_array.shape)
-
+print('classes:')
+for i in range(10): 
+  print(classes_array[i])
 path = '/mnt/smb/locker/issa-locker/users/hc3190/datasets/imagesets/HK2/HK2_class_to_idx.npy'
 classes_to_idx_array = np.load(path, allow_pickle=True)
 print('size: ', classes_to_idx_array.shape)
