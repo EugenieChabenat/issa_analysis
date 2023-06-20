@@ -51,12 +51,12 @@ if hvm:
   
   print('\nobject category to idx')
   path = '/mnt/smb/locker/issa-locker/users/hc3190/datasets/imagesets/HVM/HVM_obj_category_to_idx.npy'
-  obj_array = np.load(path)
+  obj_array = np.load(path, allow_pickle=True)
   print('size: ', obj_array.shape)
   
   print('\nobject class to idx')
   path = '/mnt/smb/locker/issa-locker/users/hc3190/datasets/imagesets/HVM/HVM_obj_class_to_idx.npy'
-  obj_array = np.load(path)
+  obj_array = np.load(path, allow_pickle=True)
   print('size: ', obj_array.shape)
   
   print('\nobject classes')
