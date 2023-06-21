@@ -65,6 +65,7 @@ def compute_curvature(X, n_frames=-1):
     #print(np.isnan(angles))
     return angles 
   
+m = nn.Identity()
 pixels = m(images.cuda().float())
   
 value_pixels = compute_curvature(pixels.cpu().detach().numpy())
