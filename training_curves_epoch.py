@@ -21,13 +21,13 @@ faces_texture = 'factorize_avgpool_equivariant_all_bn_v5'
 #path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/pretrained/factorize_avgpool_equivariant_all_bn_v5/factorize_avgpool_equivariant_all_bn_v5/stats.txt'
 
 
-path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/noprojector_conv_v1'
-path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/noprojector_conv_v2_v1'
+path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/no_projector_conv_v1/stats.txt'
+path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/no_projector_conv_v2_v1/stats.txt'
 
-path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/noprojector_linear_v1'
-path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/noprojector_linear_v2_v1'
+path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/no_projector_linear_v1/stats.txt'
+path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/no_projector_linear_v2_v1/stats.txt'
 
-path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/no_projector_linear_control_v1/stats.txt'
+#path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/no_projector_linear_control_v1/stats.txt'
 #path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/no_projector_linear_control_v2_v1/stats.txt'
 
 #path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/original_v2/stats.txt'
@@ -101,6 +101,6 @@ plt.xticks(ticks= new_inds, labels = new_labels)
 #plt.tight_layout()
 plt.title('training curve ')
 plt.show()
-plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/prediction_loss/control_np_v1.png')
+plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/prediction_loss/linear_np_v1.png')
     
 
