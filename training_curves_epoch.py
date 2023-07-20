@@ -30,7 +30,7 @@ path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwin
 path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/noprojector_linear_v1'
 path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/noprojector_linear_v2_v1'
 
-path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/original_v2'
+path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/original_v2/stats.txt'
 
 
 
