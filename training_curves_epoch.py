@@ -28,9 +28,9 @@ path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwin
 path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/noprojector_linear_v2_v1'
 
 path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/noprojector_linear_v1'
-path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/noprojector_linear_v2_v1'
+path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/noprojector_linear_v2_v1/stats.txt'
 
-path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/original_v2/stats.txt'
+#path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/original_v2/stats.txt'
 
 
 
@@ -101,6 +101,6 @@ plt.xticks(ticks= new_inds, labels = new_labels)
 #plt.tight_layout()
 plt.title('training curve ')
 plt.show()
-plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/prediction_loss/vanilla_bt.png')
+plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/prediction_loss/control_np_v2.png')
     
 
