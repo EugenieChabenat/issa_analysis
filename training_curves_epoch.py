@@ -27,8 +27,8 @@ path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwin
 path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/noprojector_linear_v1'
 path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/noprojector_linear_v2_v1'
 
-path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/noprojector_linear_control_v1'
-path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/noprojector_linear_control_v2_v1/stats.txt'
+path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/no_projector_linear_control_v1'
+path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/no_projector_linear_control_v2_v1/stats.txt'
 
 #path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/original_v2/stats.txt'
 
