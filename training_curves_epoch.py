@@ -93,13 +93,14 @@ for element in labels:
     new_inds.append(inds[i])
   i +=1
     
-    
+print('last loss: ', losses[-1])
+
 plt.figsize=(60, 30)
 plt.plot(losses, color = 'k')  
 plt.xticks(ticks= new_inds, labels = new_labels)
 #plt.tight_layout()
-plt.title('training curve faces pretrained on imagenet')
+plt.title('training curve ')
 plt.show()
-plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/training_curves/faces_pretrained.png')
+plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/prediction_loss/vanilla_bt.png')
     
 
