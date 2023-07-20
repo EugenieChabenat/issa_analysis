@@ -21,7 +21,7 @@ faces_texture = 'factorize_avgpool_equivariant_all_bn_v5'
 #path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/pretrained/factorize_avgpool_equivariant_all_bn_v5/factorize_avgpool_equivariant_all_bn_v5/stats.txt'
 
 path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/v1_no_injection_v1/stats.txt'
-path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/v2_no_injection_v1/stats.txt'
+#path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/v2_no_injection_v1/stats.txt'
 #path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/v4_no_injection_v1/stats.txt'
 #path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/IT_no_injection_v1/stats.txt'
 
@@ -111,6 +111,6 @@ plt.xticks(ticks= new_inds, labels = new_labels)
 #plt.tight_layout()
 plt.title('training curve ')
 plt.show()
-plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/prediction_loss/v2_noinj.png')
+plt.savefig('/mnt/smb/locker/issa-locker/users/Eugénie/nn-analysis/prediction_loss/v1_noinj.png')
     
 
