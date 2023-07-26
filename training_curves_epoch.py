@@ -57,11 +57,15 @@ faces_texture = 'factorize_avgpool_equivariant_all_bn_v5'
 #path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/unfreeze_conv_injection/unfreeze_injection_conv_v4_v1/stats.txt'
 #path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/unfreeze_conv_injection/unfreeze_injection_conv_IT_v1/stats.txt'
 
-path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/injection_separate_v1/stats.txt'
-path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/injection_separate_v2_v1/stats.txt'
-path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/injection_separate_v4_v1/stats.txt'
-path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/injection_separate_IT_v1/stats.txt'
+#path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/injection_separate_v1/stats.txt'
+#path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/injection_separate_v2_v1/stats.txt'
+#path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/injection_separate_v4_v1/stats.txt'
+#path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/injection_separate_IT_v1/stats.txt'
 
+path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/injection_conv_subset_v1/stats.txt'
+#path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/injection_conv_subset_v2_v1/stats.txt'
+#path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/injection_conv_subset_v4_v1/stats.txt'
+#path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/injection_conv_subset_IT_v1/stats.txt'
 
 # -- 
 
