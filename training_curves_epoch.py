@@ -54,7 +54,7 @@ faces_texture = 'factorize_avgpool_equivariant_all_bn_v5'
 
 path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/unfreeze_conv_injection/unfreeze_injection_conv_v1/stats.txt'
 path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/unfreeze_conv_injection/unfreeze_injection_conv_v2_v1/stats.txt'
-#path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/unfreeze_conv_injection/unfreeze_injection_conv_v4_v1/stats.txt'
+path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/unfreeze_conv_injection/unfreeze_injection_conv_v4_v1/stats.txt'
 #path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/unfreeze_conv_injection/unfreeze_injection_conv_v2_v1/stats.txt'
 
 
