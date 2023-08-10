@@ -142,6 +142,7 @@ for element in labels:
   i +=1
     
 print('last loss: ', losses[-1])
+print('loss: ', losses)
 
 plt.figsize=(60, 30)
 plt.plot(losses, color = 'k')  
