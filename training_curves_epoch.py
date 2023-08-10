@@ -80,6 +80,8 @@ path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwin
 path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/multiplicative_model_v4_v1/stats.txt'
 path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/multiplicative_model_IT_v1/stats.txt'
 
+path = '/mnt/smb/locker/issa-locker/users/Eugénie/models/checkpoints/barlowtwins/multiplicative_separate_v2_v1/stats.txt'
+
 # -- 
 
 list_lines = []
